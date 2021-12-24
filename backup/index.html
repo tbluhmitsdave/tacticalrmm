@@ -720,12 +720,53 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Backup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Backup
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backing-up-the-rmm" class="md-nav__link">
+    Backing up the RMM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule-to-run-daily-via-cron" class="md-nav__link">
+    Schedule to run daily via cron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-walkthru" class="md-nav__link">
+    Video Walkthru
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -741,6 +782,21 @@
     <li class="md-nav__item">
       <a href="../restore/" class="md-nav__link">
         Restore
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../av/" class="md-nav__link">
+        Antivirus Exclusions
       </a>
     </li>
   
@@ -817,18 +873,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_14">
+        <label class="md-nav__link" for="__nav_15">
           3rd Party Integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="3rd Party Integrations" data-md-level="1">
-        <label class="md-nav__title" for="__nav_14">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           3rd Party Integrations
         </label>
@@ -935,18 +991,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15">
+        <label class="md-nav__link" for="__nav_16">
           Unsupported Extras
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Unsupported Extras" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Unsupported Extras
         </label>
@@ -1040,18 +1096,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_17">
+        <label class="md-nav__link" for="__nav_18">
           Contributing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-        <label class="md-nav__title" for="__nav_17">
+        <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
           Contributing
         </label>
@@ -1180,8 +1236,35 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backing-up-the-rmm" class="md-nav__link">
+    Backing up the RMM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule-to-run-daily-via-cron" class="md-nav__link">
+    Schedule to run daily via cron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-walkthru" class="md-nav__link">
+    Video Walkthru
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1194,7 +1277,9 @@
               
                 
 
-<h1 id="backing-up-the-rmm">Backing up the RMM<a class="headerlink" href="#backing-up-the-rmm" title="Permanent link">&para;</a></h1>
+  <h1>Backup</h1>
+
+<h2 id="backing-up-the-rmm">Backing up the RMM<a class="headerlink" href="#backing-up-the-rmm" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note<p>This is only applicable for the standard install, not Docker installs.</p>
 </p>
@@ -1212,7 +1297,7 @@
 </code></pre></div>
 <p>The backup tar file will be saved in <code>/rmmbackups</code> with the following format:</p>
 <p><code>rmm-backup-CURRENTDATETIME.tar</code></p>
-<h1 id="schedule-to-run-daily-via-cron">Schedule to run daily via cron<a class="headerlink" href="#schedule-to-run-daily-via-cron" title="Permanent link">&para;</a></h1>
+<h2 id="schedule-to-run-daily-via-cron">Schedule to run daily via cron<a class="headerlink" href="#schedule-to-run-daily-via-cron" title="Permanent link">&para;</a></h2>
 <p>Make a symlink in <code>/etc/cron.d</code> (daily cron jobs) with these contents <code>00 18 * * * tactical /rmm/backup.sh</code> to run at 6pm daily.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> -e <span class="s2">&quot;\n&quot;</span> &gt;&gt; /rmm/backup.sh
 sudo ln -s /rmm/backup.sh /etc/cron.daily/
@@ -1221,7 +1306,7 @@ sudo ln -s /rmm/backup.sh /etc/cron.daily/
 <p class="admonition-title">Warning</p>
 <p>Currently the backup script doesn't have any pruning functions so the folder will grow forever without periodic cleanup</p>
 </div>
-<h1 id="video-walkthru">Video Walkthru<a class="headerlink" href="#video-walkthru" title="Permanent link">&para;</a></h1>
+<h2 id="video-walkthru">Video Walkthru<a class="headerlink" href="#video-walkthru" title="Permanent link">&para;</a></h2>
 <div class="video-wrapper">
   <iframe width="320" height="180" src="https://www.youtube.com/embed/rC0NgYJUf_8" frameborder="0" allowfullscreen></iframe>
 </div>

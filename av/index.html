@@ -12,14 +12,14 @@
         <meta name="author" content="wh1te909">
       
       
-        <link rel="canonical" href="https://wh1te909.github.io/tacticalrmm/3rdparty_splashtop/">
+        <link rel="canonical" href="https://wh1te909.github.io/tacticalrmm/av/">
       
       <link rel="icon" href="../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
     
     
       
-        <title>Splashtop - Tactical RMM Documentation</title>
+        <title>Antivirus Exclusions - Tactical RMM Documentation</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#splashtop" class="md-skip">
+        <a href="#bitdefender-gravityzone" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Splashtop
+              Antivirus Exclusions
             
           </span>
         </div>
@@ -742,11 +742,55 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../av/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Antivirus Exclusions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Antivirus Exclusions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bitdefender-gravityzone" class="md-nav__link">
+    Bitdefender Gravityzone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webroot" class="md-nav__link">
+    Webroot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -817,14 +861,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
@@ -887,52 +929,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Splashtop
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../3rdparty_splashtop/" class="md-nav__link">
         Splashtop
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#splashtop-integration" class="md-nav__link">
-    Splashtop Integration
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1228,8 +1229,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1238,8 +1237,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#splashtop-integration" class="md-nav__link">
-    Splashtop Integration
+  <a href="#bitdefender-gravityzone" class="md-nav__link">
+    Bitdefender Gravityzone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webroot" class="md-nav__link">
+    Webroot
   </a>
   
 </li>
@@ -1257,34 +1263,22 @@
               
                 
 
-<h1 id="splashtop">Splashtop<a class="headerlink" href="#splashtop" title="Permanent link">&para;</a></h1>
-<h2 id="splashtop-integration">Splashtop Integration<a class="headerlink" href="#splashtop-integration" title="Permanent link">&para;</a></h2>
-<p>From the UI go to <strong>Settings &gt; Global Settings &gt; CUSTOM FIELDS &gt; Agents</strong></p>
-<p>Add Custom Field</br>
-<strong>Target</strong> = <code>Agent</code></br>
-<strong>Name</strong> = <code>SplashtopSUUID</code></br>
-<strong>Field Type</strong> = <code>Text</code></br></p>
-<p><img alt="Service Name" src="../images/3rdparty_splashtop1.png" /></p>
-<p>While in Global Settings go to <strong>URL ACTIONS</strong></p>
-<p>Add a URL Action</br>
-<strong>Name</strong> = <code>Splashtop</code></br>
-<strong>Description</strong> = <code>Connect to a Splashtop client</code></br>
-<strong>URL Pattern</strong> =</p>
-<div class="highlight"><pre><span></span><code>st-business://com.splashtop.business?account=<span class="err">&amp;</span>uuid={{agent.SplashtopSUUID}}<span class="err">&amp;</span>sessiontype=remote
-</code></pre></div>
-<p>Navigate to an agent with Splashtop running (or apply using <strong>Settings &gt; Automation Manager</strong>).</br>
-Go to Tasks.</br>
-Add Task</br>
-<strong>Select Script</strong> = <code>Splashtop - Get SUUID for client</code> (this is a builtin script from script library)</br>
-<strong>Descriptive name of task</strong> = <code>Obtain Splashtop SUUID from device registry.</code></br>
-<strong>Collector Task</strong> = <code>CHECKED</code></br>
-<strong>Custom Field to update</strong> = <code>SplashtopSUUID</code></br></p>
-<p><img alt="Service Name" src="../images/3rdparty_splashtop2.png" /></p>
-<p>Click <strong>Next</strong></br>
-Check <strong>Manual</strong></br>
-Click <strong>Add Task</strong></p>
-<p>Right click on the newly created task and click <strong>Run Task Now</strong>.</p>
-<p>Give it a second to execute then right click the agent that you are working with and go to <strong>Run URL Action &gt; Splashtop</strong></p>
+  <h1>Antivirus Exclusions</h1>
+
+<h2 id="bitdefender-gravityzone">Bitdefender Gravityzone<a class="headerlink" href="#bitdefender-gravityzone" title="Permanent link">&para;</a></h2>
+<p>Admin URL: <a href="https://cloud.gravityzone.bitdefender.com/">https://cloud.gravityzone.bitdefender.com/</a></p>
+<p>To exclude URLs: Policies &gt; {policy name} &gt; Network Protection &gt; Content Control &gt; Settings &gt; Exclusions</p>
+<p><img alt="Web Exclusions" src="../images/avbitdefender_gravityzone_exclusions0.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avbitdefender_gravityzone_exclusions1.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avbitdefender_gravityzone_exclusions2.png" /></p>
+<h2 id="webroot">Webroot<a class="headerlink" href="#webroot" title="Permanent link">&para;</a></h2>
+<p>Admin URL:</p>
+<p><img alt="Web Exclusions" src="../images/avwebroot.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avwebroot5.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avwebroot4.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avwebroot3.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avwebroot2.png" /></p>
+<p><img alt="Web Exclusions" src="../images/avwebroot1.png" /></p>
 
               
             </article>
@@ -1298,7 +1292,7 @@ Click <strong>Add Task</strong></p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../3rdparty_screenconnect/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Connectwise Control / Screenconnect" rel="prev">
+        <a href="../restore/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Restore" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1307,20 +1301,20 @@ Click <strong>Add Task</strong></p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Connectwise Control / Screenconnect
+              Restore
             </div>
           </div>
         </a>
       
       
         
-        <a href="../3rdparty_teamviewer/" class="md-footer__link md-footer__link--next" aria-label="Next: TeamViewer" rel="next">
+        <a href="../troubleshooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TeamViewer
+              Troubleshooting
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -518,12 +518,46 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API Access
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         API Access
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-access" class="md-nav__link">
+    API Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-swagger" class="md-nav__link">
+    Enable Swagger
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -756,6 +790,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../../av/" class="md-nav__link">
+        Antivirus Exclusions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../troubleshooting/" class="md-nav__link">
         Troubleshooting
       </a>
@@ -819,18 +868,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_14">
+        <label class="md-nav__link" for="__nav_15">
           3rd Party Integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="3rd Party Integrations" data-md-level="1">
-        <label class="md-nav__title" for="__nav_14">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           3rd Party Integrations
         </label>
@@ -937,18 +986,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15">
+        <label class="md-nav__link" for="__nav_16">
           Unsupported Extras
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Unsupported Extras" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Unsupported Extras
         </label>
@@ -1042,18 +1091,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_17">
+        <label class="md-nav__link" for="__nav_18">
           Contributing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-        <label class="md-nav__title" for="__nav_17">
+        <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
           Contributing
         </label>
@@ -1182,8 +1231,28 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-access" class="md-nav__link">
+    API Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-swagger" class="md-nav__link">
+    Enable Swagger
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1196,7 +1265,9 @@
               
                 
 
-<h1 id="api-access">API Access<a class="headerlink" href="#api-access" title="Permanent link">&para;</a></h1>
+  <h1>API Access</h1>
+
+<h2 id="api-access">API Access<a class="headerlink" href="#api-access" title="Permanent link">&para;</a></h2>
 <p><em>Version added: v0.8.3</em></p>
 <p>API Keys can be created to access any of TacticalRMM's api endpoints, which will bypass 2fa authentication</p>
 <p>When creating the key you'll need to choose a user, which will reflect what permissions the key has based on the user's role.</p>
@@ -1210,6 +1281,13 @@
 <p>Example curl request:</p>
 <div class="highlight"><pre><span></span><code>curl https://api.example.com/clients/clients/ -H <span class="s2">&quot;X-API-KEY: Y57BXCFAA9WBCXH0XTEL6R5KAK69CNCZ&quot;</span>
 </code></pre></div>
+<h2 id="enable-swagger">Enable Swagger<a class="headerlink" href="#enable-swagger" title="Permanent link">&para;</a></h2>
+<p>This will let you add a browser interface to see how you can use the api better.</p>
+<p>Open <code>/rmm/api/tacticalrmm/tacticalrmm/local_settings.py</code> and add </p>
+<div class="highlight"><pre><span></span><code>SWAGGER_ENABLED = True
+</code></pre></div>
+<p>Restart django: <code>sudo systemctl restart rmm</code></p>
+<p>Then visit <code>https://api.example.com/api/schema/swagger-ui/</code> to see it in action.</p>
 
               
             </article>
